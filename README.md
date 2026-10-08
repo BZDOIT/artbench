@@ -4,6 +4,12 @@
 
 > 本项目基于 [yang0/handraw-style](https://github.com/yang0/handraw-style) 的手绘风格编号体系与提示词方法论二次开发，感谢原作者的出色工作。
 
+## 下载使用（不需要编程环境）
+
+到 [Releases](https://github.com/BZDOIT/artbench/releases) 页面下载 `artbench-v1.0.0-windows.zip`，解压双击 `artbench.exe` 即可。
+
+具体用法（配置 Key、六大功能操作、常见问题）见 **[docs/使用说明.md](docs/使用说明.md)**。
+
 ## 功能
 
 - **设定表**：按模板生成整页角色设定表（角色档案 / 三视图 / 表情包等分格）
