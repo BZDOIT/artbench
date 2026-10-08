@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>角色设定表工作台 · 桌面版</title>
+    <script>
+      /* 主题：auto=跟随系统 / dark / light / sepia。首帧渲染前钉死，防闪。存 localStorage hd_theme */
+      (function(){
+        function sys(){ return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        function get(){ try{ return localStorage.getItem('hd_theme') || 'dark'; }catch(e){ return 'dark'; } }
+        function apply(){
+          var m = get();
+          document.documentElement.setAttribute('data-theme', m === 'auto' ? sys() : m);
+        }
+        apply();
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(){ if (get() === 'auto') apply(); });
+        window.HD_THEME = {
+          get: get,
+          set: function(m){ try{ localStorage.setItem('hd_theme', m); }catch(e){} apply(); }
+        };
+      })();
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script src="./src/main.js" type="module"></script>
+</body>
+</html>

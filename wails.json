@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "workbench-desktop",
+  "outputfilename": "workbench-desktop",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "BZDOIT",
+    "email": "135199207+BZDOIT@users.noreply.github.com"
+  }
+}

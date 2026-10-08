@@ -1,0 +1,17 @@
+build/bin
+node_modules
+frontend/dist
+
+# ---- 运行数据与隐私（勿提交）----
+# data/ 目录含 settings.json(API密钥)、history.db(历史记录)、characters.json(角色数据)
+data/
+build/bin/
+tools/
+*.exe
+*.log
+*_shot*.png
+*.bmp
+
+# 会话/编辑器
+.claude/
+.workbuddy/
